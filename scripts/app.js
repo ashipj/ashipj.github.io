@@ -1,47 +1,50 @@
 
 (function() {
-  'use strict';
-  var app = {
-    isLoading: true,
-    visibleCards: {},
-    selectedCities: [],
-    spinner: document.querySelector('.loader'),
-    cardTemplate: document.querySelector('.cardTemplate'),
-    container: document.querySelector('.main'),
-    addDialog: document.querySelector('.dialog-container'),
-    daysOfWeek: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-  };
+    'use strict';
+    var app = {
+        isLoading: true,
+        spinner: document.querySelector('.loader')
+    };
 
-
-  /*****************************************************************************
-   *
-   * Event listeners for UI elements
-   *
-   ****************************************************************************/
+    document.addEventListener('DOMContentLoaded', function() {
+        app.spinner.setAttribute('hidden', true);
+    });
 
 
 
-  /*****************************************************************************
-   *
-   * Methods to update/refresh the UI
-   *
-   ****************************************************************************/
+    /*****************************************************************************
+     *
+     * Event listeners for UI elements
+     *
+     ****************************************************************************/
+    // get location (Current location with option to select a different location)
+    // get all parking lots around 1-10km of the location
+    // render map with current location and parking sopt
+    // show path to the closest parking spot.
 
 
 
-  /*****************************************************************************
-   *
-   * Methods for dealing with the model
-   *
-   ****************************************************************************/
+    /*****************************************************************************
+     *
+     * Methods to update/refresh the UI
+     *
+     ****************************************************************************/
 
 
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-     .register('/service-worker.js')
-     .then(function() { 
-        console.log('Service Worker Registered'); 
-      });
-  }
+
+    /*****************************************************************************
+     *
+     * Methods for dealing with the model
+     *
+     ****************************************************************************/
+
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/service-worker.js')
+            .then(function() {
+                console.log('Service Worker Registered');
+            });
+    }
 
 })();

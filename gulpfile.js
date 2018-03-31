@@ -20,7 +20,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('generate-sw', function() {
-  var swOptions = {
+    var swOptions = {
     staticFileGlobs: [
       './index.html',
       './images/*.{png,svg,gif,jpg}',
