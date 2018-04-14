@@ -1,6 +1,6 @@
 {
-  "name": "WeatherPWA-UD811",
-  "description": "Your first Progressive Web App for Udacity UD811",
+  "name": "Parking spot",
+  "description": "My parking spot app using PWA",
   "version": "0.0.1",
   "private": true,
   "license": "Apache2",

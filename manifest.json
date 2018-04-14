@@ -1,6 +1,6 @@
 {
-  "name": "Weather",
-  "short_name": "Weather",
+  "name": "Parking spot",
+  "short_name": "Parking",
   "icons": [{
       "src": "/images/icons/icon-48x48.png",
       "sizes": "48x48",
@@ -13,7 +13,7 @@
       "src": "/images/icons/icon-128x128.png",
       "sizes": "128x128",
       "type": "image/png"
-    }, {
+  }, {
       "src": "/images/icons/icon-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
